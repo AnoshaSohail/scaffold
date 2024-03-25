@@ -11,6 +11,7 @@ async function getWeather(e) {
   if (!checkInput(cityName)) {
     return; // Stop execution if input is invalid
   }
+  input.value = '';
   const URL = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=f2513af01d64e416a4475af322389a6c`;
 
   try {
