@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+  </head>
+  <body class="classic-gradient"> 
+
+
+    <!-- Make the weather app containers and form here -->
+    <div class="wrapper">
+      <div id="weather-container">
+        <div class="name">Weather App</div>
+        <form action="" id="location-form">
+          <input type="text" id="location-input" placeholder="Enter a city">
+          <button type="submit">Submit</button>
+        </form>
+        <div id="weather-data">
+          <div class="loading" id="loading-spinner" style="display: none;">
+            <lord-icon
+    src="https://cdn.lordicon.com/gkryirhd.json"
+    trigger="loop"
+    state="loop-snake"
+    colors="primary:#ffffff"
+    style="width:50px;height:50px">
+</lord-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+  </body>
+</html>
